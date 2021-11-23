@@ -24,6 +24,7 @@ public class MainApp {
 			System.out.println();
 			String decision = sc.nextLine();
 			System.out.println();
+			
 			switch (decision) {
 			case "a":
 				System.out.print("Introduzca su nombre: ");
@@ -61,16 +62,16 @@ public class MainApp {
 					int cont = 1;
 					for (CuentaCorriente c : cuentas) {
 						if (cont == posicion) {
-							nombreelegido = c.getTitular();
-						} else {
-							cont++;
+							nombreelegido = c.getTitular();						
 						}
+						cont++;
 					}
 
 					System.out.println(
 							"i. Cobrar sueldo\nii. Sacar pasta\niii. Subir sueldo\niv. Mostrar detalles de la persona");
 					String decisionb = sc.nextLine();
 					System.out.println();
+					
 					switch (decisionb) {
 					case "i":
 						for (Persona c : personas) {
